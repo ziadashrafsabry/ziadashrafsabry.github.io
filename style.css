@@ -1,0 +1,162 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in forwards;
+  min-height: 100vh;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 5.5s ease-in forwards;
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6600, #ffcc66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 900px;
+  line-height: 1.6;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 7.5s ease-in forwards;
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #0044cc, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 900px;
+  line-height: 1.6;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.underline-link {
+  background: linear-gradient(to right, #0044cc, #66ccff); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to right, #0044cc, #66ccff) 1;
+  padding-bottom: 1px; 
+}
+
+.socials {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  align-self: center;
+  animation: fadeIn 4s ease-in forwards;
+}
+
+.name {
+  font-size: 120px;
+  margin: 0;
+  background: linear-gradient(to right, #0044cc, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.tagline {
+  font-size: 40px;
+  margin-top: 10px;
+  background: linear-gradient(to right, #0044cc, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.intro {
+  font-size: 30px;
+  margin-top: 5px;
+  background: linear-gradient(to right, #0044cc, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: fadeIn 4s ease-in forwards;
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 70px;
+  }
+
+  .tagline {
+    font-size: 28px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .intro {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .bio {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .socials {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 50px;
+  }
+
+  .tagline {
+    font-size: 22px;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+  .bio {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .portfolio {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
